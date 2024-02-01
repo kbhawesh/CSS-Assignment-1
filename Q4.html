@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Q no.4</title>
+    <link rel="shortcut icon" href="pw logo.jpeg" type="image/x-icon">
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+.img{
+    float: left;
+    height: 50px;
+    width: 50px;
+    margin-top: 25px;
+    margin-left: 125px;
+
+}
+.Skills{
+    float: left;
+    padding: 10px;
+    /* margin-left: 124px; */
+    margin-top: 22px;
+    font-size: 30px;
+
+}
+
+.searchbar{
+    width: 850px;
+    height: 50px;
+    border: 2px #1e1e0f solid;
+    border-radius: 15px;
+    margin-top: 20px;
+    margin-left: 80px;
+}
+.profile{
+    background-color: #f76402f8;
+    float: right;
+    color: #ffffff;
+    padding: 10px;
+    margin-right: 125px;
+    margin-top: 20px;
+    font-size: 20px;
+    border-radius: 15px;
+
+}
+nav{
+    margin-top: 20px;
+    background-color: #2c2222;
+    display: grid;
+    place-items: center;
+    clear: both;
+}
+nav ul{
+    list-style-type: none;
+}
+nav ul li{
+    display:inline;
+    padding: 100px;
+    margin: 20px 20px;
+    line-height: 40px;
+   
+}
+
+nav ul li a{
+    color: #ffffff;
+    font-size: 20px;
+}
+.pwpage{
+    /* margin: 0;
+    padding: 0; */
+    width: 100%;
+    height: 100%;
+    
+}
+
+.active1:hover{
+    background-color: #ff2600;
+    transition: 0.5s;
+}
+
+    </style>
+</head>
+<body>
+     <!-- <h1>
+        4. Create a web page with a list of tech stacks involved in full-stack web development where the even-
+        numbered items have a different background color than the odd-numbered items.
+    </h1> -->
+   
+    <a href="https://pwskills.com/"><img class="img" src="pw logo.jpeg" alt="pw skills"></a>
+    <h1 class="Skills">Skills</h1>
+    <input class="searchbar" type="search " placeholder="search by Product title">
+   
+   
+
+    <a href="https://accounts.pwskills.com/login?domain=pwskills.com&redirectUrl=%2F&position=login_or_register_cta">
+        <h1 class="profile">Login/Register</h1>
+    </a>
+    <nav>
+        
+        <ul>
+            <li><a class="active1" href="https://pwskills.com/">Home</a></li>
+            <li><a class="active1" href="https://accounts.pwskills.com/login?domain=pwskills.com&redirectUrl=%2Fcourses%2F%3Fsource%3Dhomepage_explore&position=login_or_register_cta">Dashboard</a></li>
+            <li><a class="active1" href="https://pwskills.com/courses/">Course</a></li>
+            <li><a class="active1" href="https://pwskills.com/courses/?category=64b6da629c0731365f89328a">web development</a></li>
+            
+        </ul>
+      </nav>
+      <img class="pwpage" src="pw web page.png" alt="">
+      
+    
+</body>
+</html>

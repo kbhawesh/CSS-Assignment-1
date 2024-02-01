@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Q no.9</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiBHdyp8TUVGfigOL7djeZu_Nfe2e_t3Uyrk7yN93LZy3h01MJiBaTVfSizrijIq2ozpvnAMRSQm4Ezx4sEkos4EZ1d-rInqcCIaidB3eDd4r_5hWhIWjq2ny_ss8-lPNK9juFOGX5CZYvZOy5fq0STY946BJyYC4NioTwrH0nfDgHHK4rWAXODCJqH/s3600/BGC_MG_2292_optimized.jpg");
+            background-size: 280%;
+            background-position: -400px opx;
+            /* display: cover; */
+        }
+        div.main{
+            width: 400px;
+            margin: 100px auto 0px auto;
+
+        }
+        h2{
+            text-align: center;
+            padding: 20px;
+            font-family: sans-serif;
+        }
+        div.register{
+            background-color: #000000aa;
+            width: 100%;
+            font-size: 20px;
+            border-radius: 10px;
+            border: 1px solid #ffffff4d;
+            box-shadow: 2px 15px #0000004d;
+            color: #fff;
+        }
+        #register{
+            margin: 40px;
+        }
+        label{
+            font-family: sans-serif;
+            font-size: 18px;
+            font-style: italic;
+        }
+        #name{
+            width: 300px;
+            border: 1px solid #ddd;
+            border-radius: 3px;
+            outline: 0;
+            padding: 7px;
+            background-color: #fff;
+            box-shadow: (0,0,0,0.3);
+            -webkit-text-fill-color: #ff0000;
+        }
+        #submit{
+            width: 200px;
+            padding: 7px;
+            -webkit-text-fill-color: #efeffd;
+            background-color: #fa6400cc;
+            font-size: 16px;
+            font-family: sans-serif;
+            font-weight: 600;
+            border-radius: 3px;
+            border: 1px solid #0000004d;
+            box-shadow: 1px 1px 5px #0000004d;
+            margin-bottom: 20px;
+
+
+        }
+        label, span, h2{
+            text-shadow: 1px 1px 5px #0000004d;
+        }
+    </style>
+</head>
+<body>
+   <!-- <h1>9. Create a web page with a registration form, using the css attribute
+    selector change the text color of each input field to any other color.
+</h1>  -->
+    <div class="main">
+        <div class="register">
+            <h2>Register Here</h2>
+            <form id="register" method="post">
+                <label for="First Name">First Name</label>
+                <br>
+                <input type="text" name="fname" id="name" placeholder="Enter your first name">
+                <br><br>
+                <label for="last name">Last Name</label>
+                <br>
+                <input type="text" name="lname" id="name" placeholder="Enter your last name">
+                <br><br>
+                <label for="Your age">Your Age</label>
+                <br>
+                <input type="number" name="age" id="name" placeholder="Enter your Age">
+                <br><br>
+                <label for="Email">Email</label>
+                <br>
+                <input type="email" name="email" id="name" placeholder="Enter your Valid Email">
+                <br><br>
+                <label for="gender">Gender</label>
+                <br>
+                &nbsp;&nbsp;&nbsp;
+                <input type="radio" name="gender" id="male">
+                &nbsp;
+                <span id="male">Male</span>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="radio" name="gender" id="female">
+                &nbsp;
+                <span id="female">female</span>
+                <br><br>
+                <label for="Known Language">Known Language</label>
+                <br>
+                <input type="checkbox" name="lang" id="hindi">
+                &nbsp;
+                <span id="hindi">hindi</span>
+                &nbsp;&nbsp;&nbsp;
+                <input type="checkbox" name="lang" id="eng">
+                &nbsp;
+                <span id="eng">English</span>
+                &nbsp;&nbsp;&nbsp;
+                <input type="checkbox" name="lang" id="urdu">
+                &nbsp;
+                <span id="urdu">Urdu</span>
+                &nbsp;&nbsp;&nbsp;
+               
+                <br><br>
+                <input type="submit" id="submit" value="submit">
+            </form>
+            
+
+        </div><!--end register-->
+
+    </div><!--end main-->
+</body>
+</html>

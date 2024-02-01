@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Q no.5</title>
+    <style>
+        *{
+    margin: opx;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.nature{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img    {
+    width: 500px;
+    position: relative;
+}
+img{
+    width: 100%;
+    display: block;
+    margin: auto;
+
+}
+.content{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background: #00000099;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+    transition: 0.6s;
+}
+.content:hover{
+    opacity: 1;
+}
+.content h1{
+    font-size: 55px;
+    color: #ffe100;
+    margin-bottom: 15px;
+}
+.content p{
+    font-size: 19px;
+    color: #fff;
+
+}
+.content > *{
+    transform:translateY(25px);
+    transition: transform 0.6s;
+}
+.content:hover > *{
+    transform: translateY(1px);
+   
+}
+    </style>
+</head>
+<body>
+    <!-- <h1>5. Create a web page with an image that is hidden until it is hovered
+        over. Use a heading avobe the image that says hover below to reveal a suprise.
+    </h1> -->
+    
+    <div class="nature">
+        <div class="img">
+            <img src="nature1.png" >
+            <div class="content">
+                <h1>About Nature</h1>
+                <p>Nature provides air, breath etc. for live. </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
